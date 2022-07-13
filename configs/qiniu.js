@@ -4,7 +4,7 @@ module.exports = {
 		sk: 'FhnBagPmoWlfPvyXrw1dW8p6Wijii-Z-K4_pc9un'
 	},
 	bucket: {
-		name: 'txclass-img-nothing'
+		name: 'txclass-source-nothing'
 	},
 	files: [
 		{
