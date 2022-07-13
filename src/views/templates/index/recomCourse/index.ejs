@@ -1,0 +1,5 @@
+<div class="recom-course-board">
+  <% for( let i = 0; i < RecomCourseData.length; i++ ) { %>
+  <%- include('./item.ejs', { item:RecomCourseData[i], i, IMG_BASE_URL }) %> 
+  <% } %>
+</div>

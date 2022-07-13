@@ -1,0 +1,7 @@
+<div class="teacher-board clearfix">
+	<% for (var i = 0; i < StarTeacherData.length; i++) { 
+     var item = StarTeacherData[i];
+	%>
+    <%- include('item.ejs', { item, i, IMG_BASE_URL}) %>
+	<% } %>
+</div>

@@ -1,0 +1,15 @@
+<div class="header-nav">
+  <ul class="nav-list clearfix">
+    <% for( let i = 0; i < NavData.length; i++ ) { 
+      var item = NavData[i]
+    %>
+
+    <li class="nav-item">
+      <a href="<%= item.link %> " class="nav-lk" target="_blank">
+        <%= item.title %>
+      </a>
+      <i class="iconfont icon-arrow-right"></i>
+    </li>
+    <% } %>
+  </ul>
+</div>

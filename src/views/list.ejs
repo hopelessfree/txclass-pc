@@ -1,0 +1,26 @@
+<%- include('layout/head.ejs', { PAGE_CONF }) %>
+
+<div class="container">
+	<%- include('templates/common/header/index.ejs', {
+		NavData
+	}) %>
+
+	<%- include('templates/list/nav/index.ejs', {
+		CourseTabData
+	}) %>
+
+	<%- include('templates/list/courseList/index.ejs', {
+		CourseData,
+		IMG_BASE_URL
+	}) %>
+
+	<%- include('templates/common/footer/index.ejs', {
+		LinkData,
+		ManualData
+	}) %>
+
+	<%- include('datas/courseData.ejs') %>
+
+</div>
+
+<%- include('layout/foot.ejs', { PAGE_CONF }) %>
