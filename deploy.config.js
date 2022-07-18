@@ -1,7 +1,7 @@
 module.exports = {
 	app: [
     {
-    	name: 'jspp-home',
+    	name: 'txclass-pc',
     	script: 'app.js',
     	env: {
     		COMMON_VARIABLE: 'true'
@@ -15,12 +15,12 @@ module.exports = {
 	deploy: {
 		production: {
 			user: 'root',
-			host: '47.105.106.4',
+			host: '47.96.134.225',
 			ref: 'origin/master',
-			repo: 'https://gitee.com/jsjiajia_tishengban/jspp_home.git',
-			path: '/www/jspp_home/production',
+			repo: 'https://github.com/hopelessfree/txclass-pc.git',
+			path: '/www/txclass-pc/production',
 			'pre-deploy': 'git fetch --all',
-			'post-deploy': 'npm install && npm run prd && pm2 startOrRestart deploy.config.js --env production'
+			'post-deploy': 'yarn && yarn build && yarn start && pm2 startOrRestart deploy.config.js --env production'
 		}
 	}
 }
