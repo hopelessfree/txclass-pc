@@ -4,7 +4,7 @@ const LinkData = require('../configs/link')
 const ManualData = require('../configs/manual')
 
 const { IMG_BASE_URL } = require('../configs/url')
-const { getSliderData } = require('../services/slider')
+const { getSliderData } = require('../services/Slider')
 const { getRecomCourseData } = require('../services/RecomCourse')
 const { getCollectionData } = require('../services/Collection')
 const { getStarTeacherData } = require('../services/Teacher')
