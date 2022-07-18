@@ -8,7 +8,9 @@
     "prd": "NODE_ENV=production pm2 start bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack-dev-server --host localhost --content-base app/public/ --hot --config webpack.config.js --progress --display-modules --colors --display-reasons",
-    "build": "webpack --config webpack.config.js && node upload_source.js"
+    "build": "webpack --config webpack.config.js && node upload_source.js",
+    "setup": "pm2 deploy deploy.config.js production setup",
+    "deploy": "pm2 deploy deploy.config.js production"
   },
   "dependencies": {
     "debug": "^4.1.1",
