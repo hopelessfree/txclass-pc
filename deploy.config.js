@@ -2,7 +2,7 @@ module.exports = {
 	app: [
     {
     	name: 'txclass-pc',
-    	script: 'app.js',
+    	exec: 'app.js',
     	env: {
     		COMMON_VARIABLE: 'true'
     	},
