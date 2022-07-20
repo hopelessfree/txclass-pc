@@ -19,6 +19,7 @@ module.exports = {
 			ref: 'origin/master',
 			repo: 'https://github.com/hopelessfree/txclass-pc.git',
 			path: '/www/txclass-pc/production',
+			ssh_options: "StrictHostKeyChecking=no",
 			'pre-deploy': 'git fetch --all',
 			'post-deploy': 'yarn && yarn prd && pm2 startOrRestart deploy.config.js --env production'
 		}
