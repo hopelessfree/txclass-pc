@@ -10,7 +10,8 @@
     "webpack": "webpack-dev-server --host localhost --content-base app/public/ --hot --config webpack.config.js --progress --display-modules --colors --display-reasons",
     "build": "webpack --config webpack.config.js && node upload_source.js",
     "setup": "pm2 deploy deploy.config.js production setup",
-    "deploy": "pm2 deploy deploy.config.js production"
+    "deploy": "pm2 deploy deploy.config.js production",
+    "update": "pm2 deploy deploy.config.js production update"
   },
   "dependencies": {
     "debug": "^4.1.1",
